@@ -1,6 +1,6 @@
 # Windows键禁用器
 
-这是一个使用PyQt5和keyboard库开发的Windows键禁用器程序，可以轻松地禁用和解锁Windows键。
+这是一个使用PyQt5和keyboard库开发的Windows键禁用器程序，可以轻松地禁用和解锁Windows键。.
 
 ## 功能特点
 

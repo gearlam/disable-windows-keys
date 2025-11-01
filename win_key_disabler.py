@@ -13,8 +13,8 @@ class WinKeyDisabler(QMainWindow):
         
     def initUI(self):
         # 设置窗口属性
-        self.setWindowTitle('Windows键禁用器')
-        self.setFixedSize(400, 300)
+        self.setWindowTitle('Win键控制器')
+        self.setFixedSize(300, 200)
         self.setWindowFlags(Qt.WindowCloseButtonHint | Qt.WindowMinimizeButtonHint)
         
         # 创建中央部件
@@ -26,7 +26,7 @@ class WinKeyDisabler(QMainWindow):
         layout.setAlignment(Qt.AlignCenter)
         
         # 创建标题标签
-        title_label = QLabel('Windows键控制')
+        title_label = QLabel('Win键控制器')
         title_label.setAlignment(Qt.AlignCenter)
         title_font = QFont('Arial', 18, QFont.Bold)
         title_label.setFont(title_font)
@@ -46,14 +46,6 @@ class WinKeyDisabler(QMainWindow):
         self.control_button.setFont(button_font)
         self.control_button.clicked.connect(self.toggle_win_key)
         layout.addWidget(self.control_button)
-        
-        # 创建说明标签
-        info_label = QLabel('点击按钮切换Windows键状态')
-        info_label.setAlignment(Qt.AlignCenter)
-        info_font = QFont('Arial', 10)
-        info_label.setFont(info_font)
-        info_label.setStyleSheet("color: #666666;")
-        layout.addWidget(info_label)
         
         # 设置布局
         central_widget.setLayout(layout)
